@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: CI/CD Pipeline 09-06-2025
 
 on:
   push:
@@ -6,20 +6,18 @@ on:
       - main
 
 jobs:
-  build-and-test:
-    runs-on: ubuntu-latest
+  test_jobs:
+    runs-on: self-hosted
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '14'
+      - name: step 2
+        run: echo "Segunda step"
           
-      - name: Install dependencies
-        run: npm install
+      - name: step 3
+        run: echo "Terceira step"
 
-      - name: Run tests
-        run: npm test
+      - name: step 4
+        run: echo "Quarto step"
