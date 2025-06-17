@@ -1,22 +1,21 @@
-name: CI/CD Pipeline 09-06-2025
+name: Teste Workflow
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main, developer ]
 
 jobs:
   test_jobs:
+    name: Executando o job de Teste
     runs-on: ubuntu-hosted
 
     steps:
-      - name: Checkout code
+      - name: Step 1
         uses: actions/checkout@v4
       
       - name: Docker Login
         uses: docker/login-action@v3.4.0
         with:
-          # Username used to log against the Docker registry
           username: 'williamdoxv'
           # Password or personal access token used to log against the Docker registry
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
