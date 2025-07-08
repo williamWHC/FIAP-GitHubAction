@@ -1,9 +1,12 @@
+# Definindo o nome do workflow
 name: Teste Workflow
 
+# Definindo quando o workflow sera executado.
 on:
   push:
     branches: [ main, developer ]
 
+#Definindo os jobs que o workflow executara.
 jobs:
   test_jobs:
     name: Executando o job de Teste
