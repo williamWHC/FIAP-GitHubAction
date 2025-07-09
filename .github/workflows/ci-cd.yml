@@ -22,4 +22,12 @@ jobs:
           # Password or personal access token used to log against the Docker registry
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
+      - name: Build and push Docker images
+        uses: docker/build-push-action@v6.18.0
+        with:
+          context: .
+          tags: williamdoxv/fiap-ghactions:latest
+          push: true
+                    
+
           
