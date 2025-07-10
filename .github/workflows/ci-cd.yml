@@ -28,6 +28,3 @@ jobs:
           context: .
           tags: williamdoxv/fiap-ghactions:latest
           push: true
-                    
-
-          
