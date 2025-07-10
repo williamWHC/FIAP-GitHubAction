@@ -1,4 +1,4 @@
-# WILLIAM
+# cOMO CRIAR UMA IMAGEM DOCKER E PUBLICAR NO DOCKER HUB E SBURI VIA GITHUB ACTIONS
 
 ##
 
@@ -48,11 +48,11 @@ Listar container
 docker images
 ```
 
-![image.png](attachment:076f21c8-5493-4ab0-8255-c6faa867e10d:image.png)
+<img width="714" height="144" alt="image" src="https://github.com/user-attachments/assets/de14688f-b88a-45fa-a3f1-ba29e366bab9" />
 
 Após executar a imagen em no conteiner, é executado nossa solução console, dentro do container.
 
-![image.png](attachment:890b7495-9756-4104-a262-3f205a6327ef:image.png)
+<img width="600" height="354" alt="image" src="https://github.com/user-attachments/assets/6323a4b0-3a29-4481-a734-a2ac88f8fb5b" />
 
 Observação, é necessario o Docker instalado e Ter uma aplicação .Net criada.
 
@@ -78,15 +78,15 @@ Nessa aula tem como objetivo, criarmos no GitHub Actions um fluxo automatizado n
 
 2 - Acessar sessão Marketplace, e pesquisar
 
-![image.png](attachment:15de6e6b-a405-4915-9e03-88b406f906a6:image.png)
+<img width="2027" height="934" alt="image" src="https://github.com/user-attachments/assets/f9bce152-fe17-4f35-b533-ae57726abed6" />
 
 3 - Pesquisar no campos de pesquisa pelo nome “Docker Login”
 
-![image.png](attachment:58be8dd7-002d-4116-a406-a9ce8cadf433:image.png)
+<img width="485" height="100" alt="image" src="https://github.com/user-attachments/assets/a55ac93b-1341-4105-92a9-b6b430927e49" />
 
 4 - Ao clicar na action do Docker Login, copie o pdrão de estrtura de configuração, exmplo a baixo.
 
-![image.png](attachment:87ee8be8-9009-48c9-8b36-c2248ef57c79:image.png)
+<img width="486" height="724" alt="image" src="https://github.com/user-attachments/assets/11fff696-e1fd-4123-9aee-8107d8f1887e" />
 
 Copie as configurações que for usar.
 No nosso caso será.
@@ -109,7 +109,7 @@ No nosso caso será.
 
 8 - Ir em configurações do repositorio, e selecionar a opção lateral esquerda ‘ Secrets and variable ’ ⇒ Action
 
-![image.png](attachment:56f68f5b-3284-4632-a61d-f10bd776ab04:image.png)
+<img width="369" height="982" alt="image" src="https://github.com/user-attachments/assets/fe25616b-0191-449c-be46-c44b1cd57b44" />
 
 9 - Clique botão, criar ‘ New repository secret ’
 
@@ -118,13 +118,13 @@ No nosso caso será.
 11 - No campo ‘Secret’, é preciso adicionar o token de acesso que o DockerHub fornece.
 12 - Acesse [DockerHub.com](http://DockerHub.com) ⇒ Perfil ⇒ Configuração de conta ⇒ Token de acesso pessoal.
 
-![image.png](attachment:f04a5a6a-2015-442b-8349-546d9fd8e899:image.png)
+<img width="446" height="815" alt="image" src="https://github.com/user-attachments/assets/48e72066-50e3-47aa-a3d5-bd1d6a593bbd" />
 
 13 - Clique em ‘Generate new token’, e preencha os campos conforme uso.
 
-![image.png](attachment:93899c51-acff-4b92-ba14-4ee156ab1581:image.png)
+<img width="398" height="408" alt="image" src="https://github.com/user-attachments/assets/f51c2497-4033-439a-8414-7abe56a03da1" />
 
-![image.png](attachment:b61e1b49-9e61-4539-8acd-42e8a06a5297:image.png)
+<img width="1336" height="514" alt="image" src="https://github.com/user-attachments/assets/708ee2d9-c197-480d-ade8-f2cea9810ce5" />
 
 14 - Após gerar o token, copiar o token e colocar no campo Secret, e depois salve.
 
@@ -138,7 +138,7 @@ password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
 Modelo final a baixo.
 
-![image.png](attachment:9e189f97-6fae-4fd5-a950-329db59e1c16:image.png)
+<img width="1493" height="569" alt="image" src="https://github.com/user-attachments/assets/24c667e7-61dd-47c3-bc08-87f959226215" />
 
 ---
 
@@ -188,7 +188,7 @@ Configurando o build da imagem do Docker
 
 1 - Acessar o marketplace e selecionar o Docker Build
 
-![image.png](attachment:56576b85-760e-4441-806e-a9bf4353ac8d:image.png)
+<img width="472" height="449" alt="image" src="https://github.com/user-attachments/assets/11bb275f-e0ff-405a-a23d-a1ded0ba2f77" />
 
 2 - Criiando a etapa que irá criar o build e subir a imagem para o Docker
 
