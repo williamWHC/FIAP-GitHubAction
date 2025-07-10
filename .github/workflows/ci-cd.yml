@@ -4,7 +4,7 @@ name: Teste Workflow
 # Definindo quando o workflow sera executado.
 on:
   push:
-    branches: [ main, developer ]
+    branches: [main, developer]
 
 #Definindo os jobs que o workflow executara.
 jobs:
@@ -14,17 +14,18 @@ jobs:
     steps:
       - name: Step 1
         uses: actions/checkout@v4
-      
+
       - name: Docker Login
         uses: docker/login-action@v3.4.0
         with:
-          username: 'williamdoxv'
+          username: "williamdoxv"
           # Password or personal access token used to log against the Docker registry
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Build and push Docker images
         uses: docker/build-push-action@v6.18.0
         with:
-          context: .
+          context: ./ConsoleApp1
           tags: williamdoxv/fiap-ghactions:latest
           push: true
+          file: ./ConsoleApp1/dockerfile
